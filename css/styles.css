@@ -1,0 +1,56 @@
+
+
+.logo-red-social {
+    border-radius: 100%;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    background-color: black;
+}
+
+
+.inicio {
+    padding: 0px 50px;
+
+    background-image: url('../media/fondo-inicio.png'); 
+    background-size:cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    color: white;
+}
+
+
+
+.inicio h1 {
+    font-size: 12vh;
+    width: 60vw;
+}
+
+.inicio h3 {
+    font-size: 3vh;    
+}
+
+.texto-dorado {
+    color: rgb(255, 196, 0);
+}
+
+.nav-link:hover{
+    color: gold !important;
+}
+
+
+/* Media queries */
+
+@media (max-width: 767px) {
+
+
+    .inicio h1 {
+        font-size: 6vh;
+        width: 75vw;
+    }
+
+    .inicio h3 {
+        font-size: 2vh;
+        font-weight:normal;
+    }
+}
