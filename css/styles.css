@@ -1,4 +1,10 @@
+body {
+    margin: 0px;
+}
 
+.tecnologia {
+    background-color: #0f0f0f;
+}
 
 .logo-red-social {
     border-radius: 100%;
@@ -38,11 +44,32 @@
     color: gold !important;
 }
 
+.tecnologia h1 {
+    font-size: 8vh;    
+}
+
+.tecnologia h2 {
+    font-size: 5vh;
+}
+
+.tecnologia h3 {
+    font-size: 3vh;
+}
+
+.tecnologia h1 + p {
+    font-size: 2.3vh;
+    width: 72vw;
+}
+
+.card {
+    background-color: #141414;
+    color: white;
+    border-color: black;
+}
 
 /* Media queries */
 
 @media (max-width: 767px) {
-
 
     .inicio h1 {
         font-size: 6vh;
@@ -52,5 +79,12 @@
     .inicio h3 {
         font-size: 2vh;
         font-weight:normal;
+    }
+}
+
+@media (min-width: 767px) {
+
+    .tecnologia-cards {
+        padding-inline: 5vw;
     }
 }
