@@ -4,20 +4,19 @@ html, body {
   }
 
 
-.tecnologia, .valores, .beneficios {
+.inicio, .tecnologia, .valores, .beneficios, .contacto {
     background-color: #0f0f0f;
 }
 
 .logo-red-social {
     border-radius: 100%;
-    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    object-fit: cover;
     background-color: black;
 }
 
 
 .inicio {
     padding: 0px 50px;
-
     background-image: url('../media/fondo-inicio.png'); 
     background-size:cover; 
     background-position: center; 
@@ -46,7 +45,7 @@ html, body {
     color: gold !important;
 }
 
-.tecnologia h1, .valores h1, .beneficios h1 {
+.tecnologia h1, .valores h1, .beneficios h1, .contacto h1 {
     font-size: 7vh;    
 }
 
