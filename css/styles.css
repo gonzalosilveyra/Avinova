@@ -68,7 +68,72 @@ html, body {
     border-color: black;
 }
 
+.beneficios, .valores {
+    min-height: 100vh;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    color: white;    
+}
+  
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+  
+.intro {
+    margin-bottom: 3rem;
+}
+
+.seccion-beneficios h2, .seccion-valores h2 {
+    margin-bottom: 2rem;
+}
+
+  /* Grid para las cards */
+.grid-beneficios {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+  
+.beneficio-card {
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s;
+}
+  
+.beneficio-card h5 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #f7c842;
+}
+
+.grid-valores {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  
+.valor-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s;
+}  
+  
+.valor-card h5 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #f7c842;
+}
+  
+
 /* Media queries */
+
 
 @media (max-width: 767px) {
 
@@ -81,11 +146,23 @@ html, body {
         font-size: 2vh;
         font-weight:normal;
     }
+
+    .beneficios h1, .valores h1 {
+        font-size: 6vh;
+    }
 }
 
 @media (min-width: 767px) {
 
     .cards {
         padding-inline: 5vw;
+    }
+
+    .beneficios h1, .valores h1 {
+        font-size: 6vh;
+    }
+
+    .grid-beneficios, .grid-valores {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
